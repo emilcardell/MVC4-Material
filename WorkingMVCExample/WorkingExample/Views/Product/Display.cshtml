@@ -11,5 +11,5 @@
             <div class="thumbnail thumbnail-big">
                 <img src="@Html.Raw(Model.UrlToLargeImage)" />
             </div>
-            <span class="label label-info"><a href="#">Tag #1</a></span> <span class="label label-info"><a href="#">Tag #2</a></span>
+            @Html.Partial("_TagLinks", Model.Tags)
         </div>

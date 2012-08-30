@@ -6,7 +6,7 @@
            
                 <div class="span12">
 
-                    @using (Html.BeginForm("Save", "Product", new { Model.ProductId }, FormMethod.Post))
+                    @using (Html.BeginForm("Save", "Product", new { productId = Model.ProductId }, FormMethod.Post))
                     {
 
                         <div class="control-group error">
